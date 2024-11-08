@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0 1rem;
+}
+
+/* Cabeçalho */
+header {
+    background: #007acc;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Conteúdo do artigo */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.article-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.article-content h3 {
+    margin-top: 1.5rem;
+}
+
+blockquote {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-left: 5px solid #007acc;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
