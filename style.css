@@ -14,7 +14,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background: #007acc;
+    background: #032d49;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -59,7 +59,7 @@ blockquote {
     margin: 1.5rem 0;
     padding: 1rem;
     background: #f4f4f4;
-    border-left: 5px solid #007acc;
+    border-left: 5px solid #97b1c2;
 }
 
 /* Rodapé */
