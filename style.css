@@ -2,22 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #000000;
+    font-size: 18px;
     padding: 0 1rem;
+    
 }
 
 /* Cabeçalho */
 header {
-    background: #032d49;
+    background: #26a5ee;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+    
 }
 
 header h1 {
@@ -39,34 +46,76 @@ header nav ul li a {
     text-decoration: none;
 }
 
-/* Conteúdo do artigo */
-main {
-    max-width: 800px;
-    margin: 2rem auto;
+#linha{
+    width: 1024px;
+    height: 3px;
+    background-color: #000000;
+    margin: 2px;
 }
 
-.article-content img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
+/* Conteúdo do artigo */
+main {
+    max-width: 1024px;
+    margin: 2rem auto;
+    text-align: justify;
 }
+
+.featured-image{
+    width: 400px;
+    height: 400px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.titulo{
+    text-align: center;
+}
+
 
 .article-content h3 {
     margin-top: 1.5rem;
+
 }
 
 blockquote {
     margin: 1.5rem 0;
     padding: 1rem;
     background: #f4f4f4;
-    border-left: 5px solid #97b1c2;
+    border-left: 5px solid #007acc;
 }
 
 /* Rodapé */
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #333;
-    color: #fff;
+    background: #000000;
+    color: #fff9f9;
     font-size: 0.9rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+footer a:visited{
+    text-decoration: underline;
+    color: blue;
+}
+
+li a:hover{
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+    padding: 8px 8px;
+}
+
