@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Estilos gerais */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #e6d7d7;
+    background: #191b1b;
+    font-size: 18px;
+    padding: 0 1rem;
+    
+}
+
+/* Cabeçalho */
+header {
+    background: #19507a;
+    color: #e6d7d7;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+    
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#linha{
+    width: 1024px;
+    height: 3px;
+    background-color: #e6d7d7;
+    margin: 2px;
+}
+
+/* Conteúdo do artigo */
+main {
+    max-width: 1024px;
+    margin: 2rem auto;
+    text-align: justify;
+}
+
+.featured-image{
+    width: 400px;
+    height: 400px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.titulo{
+    text-align: center;
+}
+
+
+.article-content h3 {
+    margin-top: 1.5rem;
+
+}
+
+blockquote {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #3b3b3b;
+    border-left: 5px solid #19507a;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #000000;
+    color: #e6d7d7;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+footer a:visited{
+    text-decoration: underline;
+    color: #19507a;
+}
+
+li a:hover{
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+    padding: 8px 8px;
+}
+
