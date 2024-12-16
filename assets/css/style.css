@@ -21,15 +21,15 @@ header {
     background: #19507a;
     color: #e6d7d7;
     padding: 1rem 0;
-    text-align: center;
     border-radius: 10px;
     margin-top: 10px;
-    
-    
+    text-align: center;
 }
 
-header h1 {
-    margin-bottom: 0.5rem;
+header h1{
+    font-size: 40px;
+    margin-top: -20px;
+    padding: 10px;
 }
 
 header nav ul {
@@ -45,6 +45,8 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 6px 6px;
+    font-size:19px ;
 }
 
 #linha{
@@ -102,6 +104,7 @@ footer a{
     text-decoration: none;
     color: #ffffff;
     
+    
 }
 
 footer a:hover{
@@ -114,9 +117,9 @@ footer a:visited{
 }
 
 li a:hover{
-    background-color: white;
+    box-shadow: 0 0 0 100px white inset;
     color: #000000;
     border-radius: 5px;
-    padding: 8px 8px;
+    padding: 6px 6px;
 }
 
