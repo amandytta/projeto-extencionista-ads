@@ -12,34 +12,45 @@ body {
     color: #e6d7d7;
     background: #191b1b;
     font-size: 18px;
-    padding: 0 1rem;
+    
     
 }
 
 /* Cabeçalho */
-header {
-    background: #19507a;
+.header-content {
+    background-color: #0f4b79;
     color: #e6d7d7;
-    padding: 1rem 0;
-    border-radius: 10px;
-    margin-top: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 6px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+            
 }
 
-header h1{
-    font-size: 40px;
-    margin-top: -20px;
-    padding: 10px;
+/* alinhamento do icone */
+
+.icone-navegacao img{
+    width: 55px;
+    height: 0 auto;
+    margin-left: 200px;
 }
+
+/* espaçamento dos links do lado da tela e alinhamento */
 
 header nav ul {
+    padding: 0 20%;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: right;
+
 }
 
+/* espaçamento dos links de um para o outro */
+
 header nav ul li {
-    margin: 0 1rem;
+    padding: 0 2rem;
 }
 
 header nav ul li a {
@@ -63,6 +74,11 @@ main {
     text-align: justify;
 }
 
+.titulo{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 .featured-image{
     width: 400px;
     height: 400px;
@@ -70,10 +86,6 @@ main {
     border-radius: 10px;
     margin-right: 1rem;
     margin-top: 1rem;
-}
-
-.titulo{
-    text-align: center;
 }
 
 
@@ -117,7 +129,7 @@ footer a:visited{
 }
 
 li a:hover{
-    box-shadow: 0 0 0 100px white inset;
+    box-shadow: 0 0 0 100px rgb(216, 210, 210) inset;
     color: #000000;
     border-radius: 5px;
     padding: 6px 6px;
