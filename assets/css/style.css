@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     
 }
 
@@ -13,7 +14,16 @@ body {
     background: #ffffff;
     font-size: 18px;
     
-    
+}
+
+p{
+    font-size: 20px;
+}
+
+h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-decoration: underline;
 }
 
 /* Cabeçalho */
@@ -58,6 +68,7 @@ header nav ul li a {
     text-decoration: none;
     padding: 6px 6px;
     font-size:19px ;
+    
 }
 
 
@@ -92,16 +103,6 @@ main {
 }
 
 
-.conteudo-artigo-inicio h2 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-
-}
-
-.conteudo-artigo p {
-    font-size: 18px;
-
-}
 
 /* Seção de Perigos do Artigo */
 
@@ -121,16 +122,6 @@ main {
     margin-top: 1rem;
 }
 
-.conteudo-artigo-perigos h2 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-
-}
-
-.conteudo-artigo p {
-    font-size: 18px;
-
-}
 
 /* Seção de Cuidados do Artigo */
 
@@ -151,34 +142,50 @@ main {
     margin-top: 1rem;
 }
 
-.conteudo-artigo-cuidados h2 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
 
+/* Seção Final do Artigo */
+
+#linha-artigo-conclusao{
+    width: 1024px;
+    height: 4px;
+    background-color: #000000;
+    margin: 5px;
 }
 
-.conteudo-artigo p {
-    font-size: 18px;
+.imagem-conclusao{
+    width: 400px;
+    height: 400px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
 
+.citacao{
+    font-size: 1.1em;
+    padding-left: 15px;
+    border-left: 4px solid #000000; /* Linha de destaque */
+    color: #000000;
+    font-style: italic;
+    background-color: #b4b4b4; /* Fundo leve */
+    line-height: 1.6;
 }
 
 
 /* Rodapé */
 footer {
     text-align: center;
+    font-size: 14px;
     padding: 1rem 0;
     background: #000000;
     color: #e6d7d7;
-    font-size: 0.8rem;
    
-    
 }
 
 footer a{
     text-decoration: none;
     color: #ffffff;
-    
-    
+
 }
 
 footer a:hover{
@@ -196,4 +203,3 @@ li a:hover{
     border-radius: 5px;
     padding: 6px 6px;
 }
-
