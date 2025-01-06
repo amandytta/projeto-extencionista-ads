@@ -1,174 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-    
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scrollbar-width: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Estilos gerais */
-
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
 body {
-    font-family: sans-serif;
     line-height: 1.6;
     color: #000000;
     background: #ffffff;
     font-size: 18px;
-    
+    font-family: 'Poppins', sans-serif;
 }
-
 p{
     font-size: 20px;
 }
-
 h2 {
     margin-top: 1.5rem;
+    padding-top: 8rem;
     margin-bottom: 1.5rem;
     text-decoration: underline;
 }
 
 /* Cabeçalho */
-
-
 .header-content {
-    
     background-color: #3590d6;
     color: rgb(0, 0, 0);
+    filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 6px solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-bottom: 3px solid;
+    padding: 2rem 11% 2rem 3%;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%; 
-   
+    z-index: 100;
+}
+.barra-de-nav a{
+    font-size: 1.8rem;
+    color: whitesmoke;
+    padding: 1rem;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+.barra-de-nav a:hover,
+.barra-de-nav a.ativo {
+    color: white;
+    border-bottom: 3px solid #0b2c46;
+
 }
 
 /* alinhamento do icone */
-
 .icone-navegacao img{
     width: 55px;
     height: 0 auto;
-    margin-left: 200px;
+    margin-left: 5px;
 }
 
 /* espaçamento dos links do lado da tela e alinhamento */
-
 header nav ul {
     padding: 0 20%;
     list-style: none;
     display: flex;
     justify-content: right;
-
-
 }
 
 /* espaçamento dos links de um para o outro */
-
 header nav ul li {
     padding: 0 2rem;
 }
-
 header nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 6px 6px;
     font-size:19px ;
-    
 }
 
 /* Seção inicial do Artigo */
-
 #linha-artigo-inicio{
-    width: 1024px;
+    max-width: 1024px;
     height: 4px;
     background-color: #000000;
     margin: 5px;
 }
 
 /* Conteúdo do artigo */
-
 main {
+    padding: 5rem 15px 5rem;
     max-width: 1024px;
     margin: 2rem auto;
     text-align: justify;
 }
-
+section {
+    min-height: 100vh;
+    padding: 5rem auto;
+    margin-bottom: 5rem;
+    padding-top: 0;
+}
 .titulo{
     text-align: center;
-    margin-bottom: 15px;
+    margin: 8rem auto 9rem;
     padding-top: 85px;
 }
 
-.imagem-inicial{
-    width: 400px;
-    height: 400px;
-    float: left;
-    border-radius: 10px;
-    margin-right: 1rem;
-    margin-top: 1rem;
-}
-
 /* Seção de Perigos do Artigo */
-
 #linha-artigo-perigos{
-    width: 1024px;
+    max-width: 1024px;
     height: 4px;
     background-color: #000000;
-    margin: 5px;
+    margin: 5px auto 0;
 }
-
 .imagem-perigos{
     width: 400px;
     height: 400px;
     float: right;
     border-radius: 10px;
     margin-right: 1rem;
-    margin-top: 1rem;
+    margin-top: 8rem;
+    padding-left: 4.5rem
 }
 
 /* Seção de Cuidados do Artigo */
-
 #linha-artigo-cuidados{
-    width: 1024px;
+    max-width: 1024px;
     height: 4px;
     background-color: #000000;
-    margin: 5px;
-}
-
-.imagem-cuidados{
-    width: 400px;
-    height: 400px;
-    float: left;
-    border-radius: 10px;
-    margin-right: 1rem;
-    margin-top: 1rem;
+    margin: 5px auto 1rem;
 }
 
 /* Seção Final do Artigo */
-
 #linha-artigo-conclusao{
-    width: 1024px;
+    max-width: 1024px;
     height: 4px;
     background-color: #000000;
-    margin: 5px;
+    margin: 5px auto 1rem;
 }
-
-.imagem-conclusao{
-    width: 400px;
-    height: 400px;
-    float: right;
-    border-radius: 10px;
-    margin-right: 1rem;
-    margin-top: 1rem;
-}
-
 .citacao{
     font-size: 1.1em;
-    padding-left: 15px;
+    margin: 2rem auto 2rem;
+    padding: 1rem 1rem 1rem 25px;
     border-left: 4px solid #000000; /* Linha de destaque */
     color: #000000;
     font-style: italic;
@@ -177,34 +161,43 @@ main {
 }
 
 /* Rodapé */
-
 footer {
     text-align: center;
     font-size: 16px;
     padding: 1rem 0;
     background: #000000;
     color: #e6d7d7;
-   
 }
-
 footer a{
     text-decoration: none;
     color: #ffffff;
-
 }
-
 footer a:hover{
     text-decoration:underline;
 }
-
 footer a:visited{
     text-decoration: underline;
     color: #19507a;
 }
-
 li a:hover{
     box-shadow: 0 0 0 100px rgb(216, 210, 210) inset;
     color: #000000;
     border-radius: 5px;
     padding: 6px 6px;
+}
+
+/* imagens */
+
+.imagem-inicial, 
+.imagem-conclusao,
+.imagem-cuidados{
+    max-width: 400px;
+    max-height: 400px;
+    height: auto;
+    width: auto;
+    float: left;
+    border-radius: 10px;
+    margin-right: 1rem;
+    padding-right: 3.5rem;
+    margin-top: 8rem;
 }

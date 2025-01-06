@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Título do artigo">
+    <meta name="description" content="Cibersegurança">
     <title>Cibersegurança</title>
-    <link rel="stylesheet" href="/assets/css/style.css"> <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Importação de estilos e icones via font awesome -->
 </head>
 
 <body>
@@ -16,7 +19,7 @@
             <div class="icone-navegacao">
                 <img src="./assets/imagens/iconpginicial.png" alt="icone-navegacao">
             </div>
-            <nav>
+            <nav class="barra-de-nav">
                 <ul>
                     <li><a href="#conteudo-artigo-inicio">Início</a></li>
                     <li><a href="#conteudo-artigo-perigos">Perigos</a></li>
@@ -25,7 +28,9 @@
                 </ul>
             </nav>
         </div>
-
+        
+        <!-- Icone de menu da barra de navegação: opções para telas menores -->
+        <i class="fa-solid fa-bars" id="icone-menu"></i>
 
     </header>
 
@@ -135,17 +140,37 @@
 
             <section>
                 <h2> Conclusão </h2>
-                <p>A educação em cibersegurança para pais e responsáveis é essencial para proteger as crianças e adolescentes dos diversos riscos presentes no ambiente digital. Com o aumento da presença de jovens online e a constante evolução das tecnologias, surgem também novas ameaças, como cyberbullying, crimes cibernéticos, fraudes financeiras, acesso a conteúdos inapropriados e o aliciamento por indivíduos mal-intencionados. Muitos desses riscos podem ser evitados ou minimizados com a orientação adequada dos adultos. Portanto, é fundamental que pais e responsáveis se eduquem sobre as práticas de cibersegurança, adotando medidas preventivas, como o uso de senhas fortes e únicas, a configuração de privacidade em redes sociais, a vigilância sobre os sites e aplicativos acessados pelos filhos, além de promover diálogos abertos sobre o comportamento seguro na internet.</p><br>
+                <p>A educação em cibersegurança para pais e responsáveis é essencial para proteger as crianças e
+                    adolescentes dos diversos riscos presentes no ambiente digital. Com o aumento da presença de jovens
+                    online e a constante evolução das tecnologias, surgem também novas ameaças, como cyberbullying,
+                    crimes cibernéticos, fraudes financeiras, acesso a conteúdos inapropriados e o aliciamento por
+                    indivíduos mal-intencionados. Muitos desses riscos podem ser evitados ou minimizados com a
+                    orientação adequada dos adultos. Portanto, é fundamental que pais e responsáveis se eduquem sobre as
+                    práticas de cibersegurança, adotando medidas preventivas, como o uso de senhas fortes e únicas, a
+                    configuração de privacidade em redes sociais, a vigilância sobre os sites e aplicativos acessados
+                    pelos filhos, além de promover diálogos abertos sobre o comportamento seguro na internet.</p><br>
 
-                <p>Além de adotar essas práticas, os pais devem também educar os filhos para que se tornem usuários críticos e conscientes da internet. Ensinar sobre os perigos do compartilhamento excessivo de informações pessoais, a importância de desconfiar de mensagens ou ofertas suspeitas e como identificar possíveis fraudes e golpes é essencial para que os jovens possam navegar de maneira segura e responsável. A criação de um ambiente digital saudável passa, portanto, por um esforço conjunto entre os responsáveis e as crianças, onde o aprendizado contínuo sobre cibersegurança se torna uma prioridade.</p><br>
+                <p>Além de adotar essas práticas, os pais devem também educar os filhos para que se tornem usuários
+                    críticos e conscientes da internet. Ensinar sobre os perigos do compartilhamento excessivo de
+                    informações pessoais, a importância de desconfiar de mensagens ou ofertas suspeitas e como
+                    identificar possíveis fraudes e golpes é essencial para que os jovens possam navegar de maneira
+                    segura e responsável. A criação de um ambiente digital saudável passa, portanto, por um esforço
+                    conjunto entre os responsáveis e as crianças, onde o aprendizado contínuo sobre cibersegurança se
+                    torna uma prioridade.</p><br>
 
-                <p>Ao garantir que pais e responsáveis estejam bem informados sobre as ameaças cibernéticas, além de estratégias eficazes de proteção, conseguimos não apenas proteger as crianças dos riscos imediatos, mas também prepará-las para um futuro onde a segurança digital será cada vez mais crucial. A educação em cibersegurança não deve ser vista como uma opção, mas como uma necessidade urgente para que as famílias possam proteger seus membros e garantir que as futuras gerações se desenvolvam de maneira segura, ética e responsável no mundo digital.</p><br>
+                <p>Ao garantir que pais e responsáveis estejam bem informados sobre as ameaças cibernéticas, além de
+                    estratégias eficazes de proteção, conseguimos não apenas proteger as crianças dos riscos imediatos,
+                    mas também prepará-las para um futuro onde a segurança digital será cada vez mais crucial. A
+                    educação em cibersegurança não deve ser vista como uma opção, mas como uma necessidade urgente para
+                    que as famílias possam proteger seus membros e garantir que as futuras gerações se desenvolvam de
+                    maneira segura, ética e responsável no mundo digital.</p><br>
 
             </section>
 
             <div class="citacao">
                 <blockquote>
-                    "A privacidade é o direito de controlar a própria informação. A cibersegurança é a nossa capacidade de proteger essa informação." <br>
+                    "A privacidade é o direito de controlar a própria informação. A cibersegurança é a nossa capacidade
+                    de proteger essa informação." <br>
                     Michael Chertoff, ex-secretário do Departamento de Segurança Interna dos EUA.
                 </blockquote>
             </div>
@@ -155,7 +180,7 @@
 
     <!-- Rodapé -->
     <footer>
-        &copy; 2024, Artigo sobre Cibersegurança. Todos os direitos reservados.</p>
+        <p>&copy; 2024, Artigo sobre Cibersegurança. Todos os direitos reservados.</p>
     </footer>
 
 </body>
