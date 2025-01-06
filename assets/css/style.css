@@ -6,7 +6,7 @@
     text-decoration: none;
     border: none;
     outline: none;
-    scrollbar-width: smooth;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -15,6 +15,7 @@ html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
+
 body {
     line-height: 1.6;
     color: #000000;
@@ -22,12 +23,14 @@ body {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
+
 p{
     font-size: 20px;
 }
+
 h2 {
     margin-top: 1.5rem;
-    padding-top: 8rem;
+    padding-top: 5rem;
     margin-bottom: 1.5rem;
     text-decoration: underline;
 }
@@ -41,13 +44,14 @@ h2 {
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid;
-    padding: 2rem 11% 2rem 3%;
+    padding: 2rem 4% 2rem 3%;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%; 
     z-index: 100;
 }
+
 .barra-de-nav a{
     font-size: 1.8rem;
     color: whitesmoke;
@@ -57,6 +61,7 @@ h2 {
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
+
 .barra-de-nav a:hover,
 .barra-de-nav a.ativo {
     color: white;
@@ -65,6 +70,7 @@ h2 {
 }
 
 /* alinhamento do icone */
+
 .icone-navegacao img{
     width: 55px;
     height: 0 auto;
@@ -72,6 +78,7 @@ h2 {
 }
 
 /* espaçamento dos links do lado da tela e alinhamento */
+
 header nav ul {
     padding: 0 20%;
     list-style: none;
@@ -83,6 +90,7 @@ header nav ul {
 header nav ul li {
     padding: 0 2rem;
 }
+
 header nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -96,24 +104,27 @@ header nav ul li a {
     height: 4px;
     background-color: #000000;
     margin: 5px;
+    scroll-margin-top: 115px;
 }
 
 /* Conteúdo do artigo */
 main {
-    padding: 5rem 15px 5rem;
+    padding: 0rem 15px 5rem;
     max-width: 1024px;
     margin: 2rem auto;
     text-align: justify;
 }
+
 section {
     min-height: 100vh;
     padding: 5rem auto;
     margin-bottom: 5rem;
     padding-top: 0;
 }
+
 .titulo{
     text-align: center;
-    margin: 8rem auto 9rem;
+    margin: 5rem auto 5rem;
     padding-top: 85px;
 }
 
@@ -123,7 +134,9 @@ section {
     height: 4px;
     background-color: #000000;
     margin: 5px auto 0;
+    scroll-margin-top: 115px;
 }
+
 .imagem-perigos{
     width: 400px;
     height: 400px;
@@ -140,6 +153,7 @@ section {
     height: 4px;
     background-color: #000000;
     margin: 5px auto 1rem;
+    scroll-margin-top: 115px;
 }
 
 /* Seção Final do Artigo */
@@ -149,6 +163,7 @@ section {
     background-color: #000000;
     margin: 5px auto 1rem;
 }
+
 .citacao{
     font-size: 1.1em;
     margin: 2rem auto 2rem;
@@ -161,6 +176,7 @@ section {
 }
 
 /* Rodapé */
+
 footer {
     text-align: center;
     font-size: 16px;
@@ -168,17 +184,21 @@ footer {
     background: #000000;
     color: #e6d7d7;
 }
+
 footer a{
     text-decoration: none;
     color: #ffffff;
 }
+
 footer a:hover{
     text-decoration:underline;
 }
+
 footer a:visited{
     text-decoration: underline;
     color: #19507a;
 }
+
 li a:hover{
     box-shadow: 0 0 0 100px rgb(216, 210, 210) inset;
     color: #000000;
@@ -190,7 +210,8 @@ li a:hover{
 
 .imagem-inicial, 
 .imagem-conclusao,
-.imagem-cuidados{
+.imagem-cuidados,
+.imagem-perigos{
     max-width: 400px;
     max-height: 400px;
     height: auto;
@@ -199,5 +220,74 @@ li a:hover{
     border-radius: 10px;
     margin-right: 1rem;
     padding-right: 3.5rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
+
+/* Barra de navegação celular */
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .menu-toggle {
+    display: none; /* Oculto por padrão */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+/* Responsividade */
+
+  @media (max-width: 768px) {
+
+    section{
+        margin-left: 30px;
+    }
+
+    .titulo{
+        font-size: 22px;
+        margin-left: 40px;
+        text-align:justify;
+        
+    }
+
+    #linha-artigo-conclusao,
+    #linha-artigo-cuidados,
+    #linha-artigo-perigos,
+    #linha-artigo-inicio {
+        width: 110%;
+        height: 4px;
+        background-color: #000000;
+        margin: 5px auto 1rem;
+    }
+
+    .nav-links {
+      display: none; /* Ocultar o menu por padrão */
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px; /* Ajuste baseado na altura da barra */
+      right: 0;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .nav-links.active {
+      display: flex; /* Mostrar o menu quando ativo */
+    }
+  
+    .menu-toggle {
+      display: block; /* Mostrar o botão no modo responsivo */
+    }
+  }
