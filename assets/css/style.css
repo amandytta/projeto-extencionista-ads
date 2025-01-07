@@ -208,15 +208,18 @@ li a:hover{
 /* Barra de navegação celular */
 .nav-links {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .nav-links li a {
     text-decoration: none;
     color: white;
+    margin-left: 10px;
 }
+
 .menu-toggle {
     display: none;
     /* Oculto por padrão */
@@ -234,12 +237,14 @@ h3 {
     margin-bottom: 1.5rem;
     font-size: 3rem;
 }
+
 h4 {
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
 }
+
 ul {
     margin-left: 5rem;
 }
@@ -247,15 +252,18 @@ ul {
 /* Responsividade */
 
 @media (max-width: 768px) {
+
     section {
         margin-left: 30px;
     }
+
     .titulo {
         font-size: 22px;
         margin-left: 40px;
         text-align: justify;
 
     }
+
     #linha-artigo-conclusao,
     #linha-artigo-cuidados,
     #linha-artigo-perigos,
@@ -265,24 +273,32 @@ ul {
         background-color: #000000;
         margin: 5px auto 1rem;
     }
+
     .nav-links {
         display: none;
         /* Ocultar o menu por padrão */
         flex-direction: column;
-        background-color: #333;
+        background-color: #2673ad;
         position: absolute;
-        top: 60px;
+        top: 65px;
         /* Ajuste baseado na altura da barra */
         right: 0;
-        width: 100%;
-        padding: 10px 0;
+        width: 35%;
+        padding: 20px 0;
+        text-align: left;
     }
+
     .nav-links.active {
         display: flex;
         /* Mostrar o menu quando ativo */
     }
+
     .menu-toggle {
         display: block;
         /* Mostrar o botão no modo responsivo */
+    }
+
+    .nav-links:hover{
+        text-decoration: underline;
     }
 }
