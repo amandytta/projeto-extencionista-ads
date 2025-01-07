@@ -170,6 +170,7 @@ footer {
     padding: 1rem 0;
     background: #000000;
     color: #e6d7d7;
+    width: 120%;
 }
 footer a{
     text-decoration: none;
@@ -282,8 +283,8 @@ ul {
         position: absolute;
         top: 65px;
         /* Ajuste baseado na altura da barra */
-        right: 0;
-        width: 35%;
+        right: 5px;
+        width: 40%;
         padding: 20px 0;
         text-align: left;
     }
@@ -300,5 +301,10 @@ ul {
 
     .nav-links:hover{
         text-decoration: underline;
+    }
+
+    .citacao{
+        margin-left: 30px;
+        font-size: 1em;
     }
 }
