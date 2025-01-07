@@ -254,8 +254,9 @@ ul {
 
 @media (max-width: 768px) {
 
-    section {
-        margin-left: 30px;
+    main {
+        padding-left: 20%;
+    
     }
 
     .titulo {
@@ -304,7 +305,7 @@ ul {
     }
 
     .citacao{
-        margin-left: 30px;
+      
         font-size: 1em;
     }
 }
