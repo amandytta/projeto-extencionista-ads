@@ -23,7 +23,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 p{
-    font-size: 20px;
+    font-size: 21px;
 }
 h2 {
     margin-top: 1.5rem;
@@ -48,15 +48,17 @@ h2 {
     width: 100%; 
     z-index: 100;
 }
+
 .barra-de-nav a{
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     color: whitesmoke;
     padding: 1rem;
     margin-left: 4rem;
-    font-weight: 500;
+    font-weight: 800;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
+
 .barra-de-nav a:hover,
 .barra-de-nav a.ativo {
     color: white;
@@ -66,7 +68,7 @@ h2 {
 
 /* alinhamento do icone */
 .icone-navegacao img{
-    width: 55px;
+    width: 60px;
     height: 0 auto;
     margin-left: 5px;
 }
@@ -101,21 +103,21 @@ header nav ul li a {
 
 /* Conteúdo do artigo */
 main {
-    padding: 0rem 15px 5rem;
+    padding: 0rem 10px 5rem;
     max-width: 1024px;
     margin: 2rem auto;
     text-align: justify;
 }
+
 section {
-    min-height: 100vh;
-    padding: 5rem auto;
-    margin-bottom: 5rem;
-    padding-top: 0;
+    margin-bottom: 8%;
 }
+
 .titulo{
     text-align: center;
     margin: 5rem auto 5rem;
     padding-top: 85px;
+    font-size: 30px;
 }
 
 /* Seção de Perigos do Artigo */
@@ -263,6 +265,13 @@ ul {
     overflow-x: hidden;
    }
 
+   section {
+    min-height: 100vh;
+    padding: 5rem auto;
+    padding-top: 0;
+}
+
+
     .titulo {
         font-size: 22px;
         
@@ -301,6 +310,16 @@ ul {
     .menu-toggle {
         display: block;
         /* Mostrar o botão no modo responsivo */
+    }
+
+    .menu-toggle.open::after {
+        content: "✖"; /* Ícone X */
+        transition: 0.3s ease;
+      }
+      
+    .menu-toggle::after {
+        content: "☰"; /* Ícone de hambúrguer */
+        transition: 0.3s ease;
     }
 
     .nav-links:hover{
