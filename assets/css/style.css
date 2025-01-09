@@ -294,9 +294,9 @@ ul {
         flex-direction: column;
         background-color: #2673ad;
         position: absolute;
-        top: 65px;
+        top: 75px;
         /* Ajuste baseado na altura da barra */
-        right: 5px;
+        right: 1px;
         width: 40%;
         padding: 20px 0;
         text-align: left;
