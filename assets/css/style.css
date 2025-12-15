@@ -21,7 +21,14 @@ body {
     background: #ffffff;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+    transition: background 0.3s, color 0.3s;
 }
+
+body.dark-mode{
+    background-color: #000000;
+    color: #ffffff;
+}
+
 p{
     font-size: 21px;
 }
@@ -41,7 +48,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid;
-    padding: 2rem 4% 2rem 3%;
+    padding: 3rem 4% 2rem 3%;
     position: fixed;
     top: 0;
     left: 0;
@@ -49,10 +56,15 @@ h2 {
     z-index: 100;
 }
 
+body.dark-mode .header-content{
+    color: rgb(255, 255, 255);
+   
+}
+
 .barra-de-nav a{
     font-size: 1.9rem;
     color: whitesmoke;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-left: 4rem;
     font-weight: 800;
     transition: 0.3s ease;
@@ -71,6 +83,18 @@ h2 {
     width: 60px;
     height: 0 auto;
     margin-left: 5px;
+}
+
+.img-theme {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transform: 0.9s, ease;
+}
+
+.img-theme:active {
+    transform: scale(0.9);
 }
 
 /* espaçamento dos links do lado da tela e alinhamento */
@@ -93,10 +117,18 @@ header nav ul li a {
 }
 
 /* Seção inicial do Artigo */
-#linha-artigo-inicio{
+.linha-artigo{
     max-width: 1024px;
     height: 4px;
     background-color: #000000;
+    margin: 5px;
+    scroll-margin-top: 115px;
+}
+
+body.dark-mode .linha-artigo{
+    max-width: 1024px;
+    height: 4px;
+    background-color: #ffffff;
     margin: 5px;
     scroll-margin-top: 115px;
 }
@@ -121,13 +153,7 @@ section {
 }
 
 /* Seção de Perigos do Artigo */
-#linha-artigo-perigos{
-    max-width: 1024px;
-    height: 4px;
-    background-color: #000000;
-    margin: 5px auto 0;
-    scroll-margin-top: 115px;
-}
+
 .imagem-perigos{
     width: 400px;
     height: 400px;
@@ -138,22 +164,6 @@ section {
     padding-left: 4.5rem
 }
 
-/* Seção de Cuidados do Artigo */
-#linha-artigo-cuidados{
-    max-width: 1024px;
-    height: 4px;
-    background-color: #000000;
-    margin: 5px auto 1rem;
-    scroll-margin-top: 115px;
-}
-
-/* Seção Final do Artigo */
-#linha-artigo-conclusao{
-    max-width: 1024px;
-    height: 4px;
-    background-color: #000000;
-    margin: 5px auto 1rem;
-}
 .citacao{
     font-size: 1.1em;
     margin: 2rem auto 2rem;
@@ -253,6 +263,14 @@ ul {
     margin-left: 5rem;
 }
 
+#conteudo-artigo-inicio{
+    scroll-margin-top: 210px;
+}
+
+#conteudo-artigo-perigos,#conteudo-artigo-cuidados{
+    scroll-margin-top: 180px;
+}
+
 /* Responsividade */
 
 @media (max-width: 768px) {
@@ -271,17 +289,12 @@ ul {
     padding-top: 0;
 }
 
-
     .titulo {
         font-size: 22px;
         
-
     }
-
-    #linha-artigo-conclusao,
-    #linha-artigo-cuidados,
-    #linha-artigo-perigos,
-    #linha-artigo-inicio {
+    
+    .linha-artigo {
         width: 100%;
         height: 4px;
         background-color: #000000;
