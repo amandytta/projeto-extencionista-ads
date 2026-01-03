@@ -23,12 +23,10 @@ body {
     font-family: 'Poppins', sans-serif;
     transition: background 0.3s, color 0.3s;
 }
-
 body.dark-mode{
     background-color: #000000;
     color: #ffffff;
 }
-
 p{
     font-size: 21px;
 }
@@ -55,12 +53,10 @@ h2 {
     width: 100%; 
     z-index: 100;
 }
-
 body.dark-mode .header-content{
     color: rgb(255, 255, 255);
-   
+    background-color: #245880;
 }
-
 .barra-de-nav a{
     font-size: 1.9rem;
     color: whitesmoke;
@@ -70,7 +66,6 @@ body.dark-mode .header-content{
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
-
 .barra-de-nav a:hover,
 .barra-de-nav a.ativo {
     color: white;
@@ -84,7 +79,6 @@ body.dark-mode .header-content{
     height: 0 auto;
     margin-left: 5px;
 }
-
 .img-theme {
     width: 30px;
     height: auto;
@@ -92,7 +86,6 @@ body.dark-mode .header-content{
     border: 2px solid transparent;
     transform: 0.9s, ease;
 }
-
 .img-theme:active {
     transform: scale(0.9);
 }
@@ -116,7 +109,7 @@ header nav ul li a {
     font-size:19px ;
 }
 
-/* Seção inicial do Artigo */
+/* Primeira seção do Artigo */
 .linha-artigo{
     max-width: 1024px;
     height: 4px;
@@ -124,7 +117,6 @@ header nav ul li a {
     margin: 5px;
     scroll-margin-top: 115px;
 }
-
 body.dark-mode .linha-artigo{
     max-width: 1024px;
     height: 4px;
@@ -140,11 +132,9 @@ main {
     margin: 2rem auto;
     text-align: justify;
 }
-
 section {
     margin-bottom: 8%;
 }
-
 .titulo{
     text-align: center;
     margin: 5rem auto 5rem;
@@ -152,8 +142,7 @@ section {
     font-size: 30px;
 }
 
-/* Seção de Perigos do Artigo */
-
+/* Segunda seção do Artigo */
 .imagem-perigos{
     width: 400px;
     height: 400px;
@@ -163,7 +152,6 @@ section {
     margin-top: 8rem;
     padding-left: 4.5rem
 }
-
 .citacao{
     font-size: 1.1em;
     margin: 2rem auto 2rem;
@@ -226,13 +214,11 @@ li a:hover{
     margin: 0;
     padding: 0;
 }
-
 .nav-links li a {
     text-decoration: none;
     color: white;
     margin-left: 10px;
 }
-
 .menu-toggle {
     display: none;
     /* Oculto por padrão */
@@ -251,61 +237,67 @@ h3 {
     margin-bottom: 1.5rem;
     font-size: 3rem;
 }
-
 h4 {
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
 }
-
 ul {
     margin-left: 5rem;
 }
-
 #conteudo-artigo-inicio{
     scroll-margin-top: 210px;
 }
-
 #conteudo-artigo-perigos,#conteudo-artigo-cuidados{
     scroll-margin-top: 180px;
 }
 
 /* Responsividade */
-
 @media (max-width: 768px) {
-
    *{
     box-sizing: border-box;
    }
-
    main{
     overflow-x: hidden;
    }
-
    section {
     min-height: 100vh;
     padding: 5rem auto;
     padding-top: 0;
 }
 
+    /* barra de navegação: ícone de tema + botão hamburguer lado a lado */
+    .barra-de-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; /* ambos vão para a direita */
+        gap: 3rem; /* espaço entre lua e hambúrguer */
+    }
+    /* mostra o container da lua no mobile */
+    #theme-mobile-container {
+        display: flex;
+        align-items: center;
+    }
     .titulo {
         font-size: 22px;
         
     }
-    
     .linha-artigo {
         width: 100%;
         height: 4px;
         background-color: #000000;
         margin: 5px auto 1rem;
     }
-
     .nav-links {
         display: none;
         /* Ocultar o menu por padrão */
         flex-direction: column;
-        background-color: #2673ad;
+        background-color: #3590d6;
+        border-radius: 7px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #000000;
         position: absolute;
         top: 75px;
         /* Ajuste baseado na altura da barra */
@@ -314,31 +306,35 @@ ul {
         padding: 20px 0;
         text-align: left;
     }
-
     .nav-links.active {
         display: flex;
         /* Mostrar o menu quando ativo */
     }
-
     .menu-toggle {
         display: block;
         /* Mostrar o botão no modo responsivo */
-    }
-
+        background: none;
+        border: none;
+        font-size: 3rem;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+  }
     .menu-toggle.open::after {
         content: "✖"; /* Ícone X */
         transition: 0.3s ease;
       }
-      
     .menu-toggle::after {
         content: "☰"; /* Ícone de hambúrguer */
         transition: 0.3s ease;
     }
-
+    .dark-mode .nav-links{
+    background-color: #245880;
+    border-color: #ffffff;
+    }
     .nav-links:hover{
         text-decoration: underline;
     }
-
     .citacao{
       
         font-size: 1em;
